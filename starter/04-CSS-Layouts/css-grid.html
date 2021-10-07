@@ -11,10 +11,14 @@
       }
       .el--2 {
         background-color: orangered;
+        grid-column: 1 / -1;
+        grid-row: 2;
       }
       .el--3 {
         background-color: green;
         height: 150px;
+        align-self: end;
+        justify-self: end;
       }
       .el--4 {
         background-color: goldenrod;
@@ -30,6 +34,8 @@
       }
       .el--8 {
         background-color: crimson;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
       }
 
       .container--1 {
@@ -40,6 +46,15 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 60px;
+
+        display: none;
       }
 
       .container--2 {
@@ -53,6 +68,19 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Aligningi tracks inside container
+        distribut emty space */
+        justify-content: center;
+        align-content: center;
+
+        /* Aligning items INSIDE cells: moving items around inside cells */
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
