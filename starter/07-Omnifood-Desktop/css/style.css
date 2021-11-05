@@ -25,7 +25,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -56,6 +56,28 @@
   background-color: #cf711f;
 }
 
+/* MOBILE  */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+.icon-mobile-nav[name='menu-outline'] {
+}
+
 /****************************/
 /* HERO SECTION */
 /****************************/
@@ -73,6 +95,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+
+  position: relative;
 }
 
 .hero-description {
@@ -480,7 +504,7 @@
 /****************************/
 
 .section-cta {
-  padding: 4.8rem 0 12.8rem;
+  padding: 4.8rem 2.4rem 12.8rem;
 }
 
 .cta {

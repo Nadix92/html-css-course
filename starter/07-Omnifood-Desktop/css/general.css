@@ -56,6 +56,11 @@ Medium: 11px
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
@@ -69,6 +74,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  position: relative;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
 }
 
 /****************************/
@@ -225,6 +233,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-item {
